@@ -435,7 +435,8 @@ class SimpleBlockTagTests(TagTestCase):
             ),
             (
                 "'one_param_block' tag requires a variable name after 'as'",
-                "{% load custom %}{% one_param_block 37 as %}content{% endone_param_block %}",
+                "{% load custom %}{% one_param_block 37 as %}content"
+                "{% endone_param_block %}",
             ),
         ]
 
